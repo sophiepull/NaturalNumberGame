@@ -1,0 +1,14 @@
+lemma one_mul (m : mynat) : 1 * m = m :=
+begin
+induction m with d hd
+rw one_eq_succ_zero,
+rw mul_zero,
+refl,
+
+rw mul_succ 1 d,
+rw succ_eq_add_one,
+rw hd,
+refl,
+
+
+end
