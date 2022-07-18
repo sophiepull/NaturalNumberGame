@@ -1,0 +1,10 @@
+theorem succ_eq_add_one (n : mynat) : succ n = n + 1 :=
+begin
+induction n with d hd,
+rw zero_add,
+refl,
+
+rw succ_add,
+refl,
+
+end
