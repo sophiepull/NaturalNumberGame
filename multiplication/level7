@@ -1,0 +1,17 @@
+lemma add_mul (a b t : mynat) : (a + b) * t = a * t + b * t :=
+begin
+induction b with d hd,
+rw add_zero,
+rw zero_mul,
+rw add_zero,
+refl,
+
+rw add_succ,
+rw succ_mul,
+rw hd,
+rw succ_mul,
+simp,
+
+
+
+end
