@@ -1,0 +1,11 @@
+lemma mul_left_comm (a b c : mynat) : a * (b * c) = b * (a * c) :=
+begin
+rw mul_comm,
+rw mul_comm a c,
+rw mul_assoc,
+refl,
+
+
+
+
+end
